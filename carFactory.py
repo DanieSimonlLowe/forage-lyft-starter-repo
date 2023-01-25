@@ -5,7 +5,7 @@ from willoughby import Willoughby
 from sternman import Sternman
 
 from spindler import Spindler
-from nubbin import Nubbin
+from nubbit import Nubbin
 
 class CarFactory():
     @staticmethod
