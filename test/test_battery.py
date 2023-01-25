@@ -36,12 +36,12 @@ class TestSpindler(unittest.TestCase):
 
     def allmost_needs_service_test(self):
         today = datetime.today().date()
-        battery = Spindler(today.replace(year=today.year - 2))
+        battery = Spindler(today.replace(year=today.year - 3))
         self.assertFalse(battery.needs_service())
 
     def just_needs_service_test(self):
         today = datetime.today().date()
-        battery = Spindler(today.replace(year=today.year - 3))
+        battery = Spindler(today.replace(year=today.year - 4))
         self.assertTrue(battery.needs_service())
 
     def very_needs_service_test(self):
